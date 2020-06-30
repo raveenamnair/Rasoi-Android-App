@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Analytics"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/gold_text_color"
+            android:textSize="32sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/radiogroup"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="Frozen"
+                android:id="@+id/frozen_radio"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:text="Category"
+                android:id="@+id/cat_radio"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textView4"
+            android:text="Things in fridge"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/gold_text_color"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stats_card"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/textView4"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_margin="16dp"
+            android:background="@color/red_color"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Number of Items"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="32dp"
+                    android:src="@drawable/pink_graph" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/totalCount"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textSize="60sp"
+                    android:textStyle="bold"
+                    android:textColor="#A37700"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_backStats"
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        app:backgroundTint="@color/fab_color"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</RelativeLayout>
+

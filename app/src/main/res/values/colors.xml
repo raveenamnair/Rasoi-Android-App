@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#618536</color>
+    <color name="colorAccent">#009688</color>
+    <color name="colorList">#FADBAD</color>
+    <color name="text_box">#F4E69E</color>
+    <color name="fab_color">#EBCF59</color>
+    <color name="red_color">#EB5959</color>
+    <color name="gold_text_color">#A37700</color>
+</resources>

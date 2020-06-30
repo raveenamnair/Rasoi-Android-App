@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenbkg"
+    tools:context=".FoodDetailActivity">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodDetailCard"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_foodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Food Title"
+                android:textColor="@color/gold_text_color"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="45dp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_name"
+                android:layout_margin="16dp"
+                android:columnCount="2"
+                android:rowCount="6">
+
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gold_text_color"
+                    android:text="Category" />
+
+                <TextView
+                    android:id="@+id/tv_foodCategory"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_margin="8dp"
+                    android:text='""' />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gold_text_color"
+                    android:text="Store" />
+
+                <TextView
+                    android:id="@+id/tv_foodLocation"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_margin="8dp"
+                    android:text='""' />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gold_text_color"
+                    android:text="Date Bought" />
+
+                <TextView
+                    android:id="@+id/tv_foodBoughtDate"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_margin="8dp"
+                    android:text='""' />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/gold_text_color"
+                    android:textStyle="bold"
+                    android:text="Shelf Life" />
+
+                <TextView
+                    android:id="@+id/tv_foodExpiryTime"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_margin="8dp"
+                    android:text='""' />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/gold_text_color"
+                    android:textStyle="bold"
+                    android:text="Expires On"/>
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:id="@+id/tv_foodFinishDate"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_margin="8dp"
+                    android:text='""'/>
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/gold_text_color"
+                    android:textStyle="bold"
+                    android:text="Frozen Status"/>
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:id="@+id/tv_frozenStatus"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:layout_margin="8dp"
+                    android:text='""'/>
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="176dp"
+            android:backgroundTint="@color/red_color"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:backgroundTint="@color/fab_color" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_backDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/fab_color"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rasoi</string>
+    <string name="welcome_message">Welcome to Food Manager.\nClick the Button to Begin</string>
+    <string name="begin">Begin</string>
+    <string name="add_item_message">Add New Item</string>
+    <string name="add_hint">Type a Food Item Name</string>
+    <string name="location_hint">Type Name of Store</string>
+    <string name="frozen">Frozen Item</string>
+    <string name="view_data">Existing Items</string>
+    <string name="add_item_btn">Add New Item</string>
+    <string name="food_list_message">Current Items In Fridge</string>
+    <string name="edit_btn">Edit</string>
+    <string name="remove_btn">Delete</string>
+    <string name="stats_text">This displays average bought things</string>
+    <string name="navigation_text">Choose a category</string>
+    <string name="HOME_expire">Expiring Soon</string>
+    <string name="expireListDescription">List of Items That Will Expire Soon</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="rasoi_app_guide">Rasoi App Guide</string>
+    <string name="help_description">This is a help guide for users of Rasoi, on Android devices</string>
+    <string name="how_to_add_HELP">On the dashboard navigation page, there is a gold floating action
+        button with a black cross. Click on that icon and it will lead you to a page where you can
+        enter information about the food item you want to add.</string>
+    <string name="manage_remove_HELP">You can manage items in your list by tapping on their name when
+        viewing in the food list mode. When tapping on the item, it will bring you to a page with
+        the details regarding your item. If you would like to edit fields on that food item, click
+        the gold floating action button with a pen icon and fill in the fields you\'d like to modify.
+        If you want to delete a food item, just click the red button with the words DELETE marked
+        underneath the food details.</string>
+    <string name="analytics_HELP">So far, there are analytics showing the total number of items you
+        have added in your list as well as a Pie Chart describing the different categories you have
+        and how many frozen items acquired. If there are other statistics you\'d like to see but is
+        not present, contact us.</string>
+    <string name="bio_ABOUT">Rasoi is an app created by Raveena Nair in Summer of 2020. This app is
+        one dedicated to abolishing the problem of forgetting what is in your refrigerator.
+        When spending lots of hours at home with the family during quarantine time due to Corona,
+        it was made apparent that a common problem in my house hold would be to forget the items that
+        were put in the refrigerator. Many times my father would buy items from the grocery store,
+        but would forget to tell my mother that certain items had been bought, and before you knew it,
+        the items could not be used any more.\n\nRasoi was made to eliminate that problem and help
+        remind users what items were in their refrigerator,
+        and when they would expire. Food waste is a major problem, especially countries like the United States,
+        and so everyone can do a simple part in reducing waste by being mindful of the items they buy.</string>
+    <string name="contact_description">If you have any questions, concerns, or feedback about the Rasoi app, please fill out the Contact form.</string>
+
+
+</resources>
