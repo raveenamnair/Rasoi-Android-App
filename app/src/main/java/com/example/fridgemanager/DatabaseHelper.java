@@ -13,6 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * This is a helper class that deals with all the Database and SQL knowledge
+ * This class is in charge of store information to the database, removing items, and updating them
+ */
 public class DatabaseHelper extends SQLiteOpenHelper {
     // Making constants that will be used throughout program
     public static final String TABLE_NAME = "FOOD_TABLE";

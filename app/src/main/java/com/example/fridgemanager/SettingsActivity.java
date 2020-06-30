@@ -14,6 +14,10 @@ import androidx.preference.PreferenceFragmentCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * Settings Activity
+ */
+
 public class SettingsActivity extends AppCompatActivity  {
 
     TextView display;

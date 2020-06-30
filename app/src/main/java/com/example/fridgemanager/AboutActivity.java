@@ -9,6 +9,11 @@ import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * This class will host the About Page will gives a description of the creater of Rasoi and
+ * what the app is about
+ * **/
+
 public class AboutActivity extends AppCompatActivity {
 
     @Override

@@ -19,6 +19,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class displays all the items in either a specific category the users chooses,
+ * or in a general format, depending on what they clicked on previously in the DashboardNavigation
+ */
+
 public class FoodListActivity extends AppCompatActivity {
 
     ListView lv_foodList;

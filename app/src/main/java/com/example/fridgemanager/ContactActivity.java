@@ -13,6 +13,11 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * Contact class stores the name, email, subject and message the user inputs and
+ * sends an email to Rasoi
+ */
+
 public class ContactActivity extends AppCompatActivity {
 
     @Override

@@ -10,6 +10,11 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 
+/**
+ * This is a helper class that deals with the DatePickerFragment that pops when
+ * user clicks on a button that allows them to pick the date the bought the item
+ */
+
 public class DatePickerFragment extends DialogFragment {
     @NonNull
     @Override

@@ -28,6 +28,11 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * This class is in charge of updating the fields that the user wishes to update and storing them
+ * back in the Database with the Database Helper Class
+ */
+
 public class EditFoodItem extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     int foodId;

@@ -14,6 +14,11 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * This class is in charge of displaying the details of a specific food item the user decideds to
+ * click on.
+ */
+
 public class FoodDetailActivity extends AppCompatActivity {
 
     int foodID;

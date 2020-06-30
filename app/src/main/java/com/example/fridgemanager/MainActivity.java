@@ -11,6 +11,10 @@ import android.view.View;
 import android.widget.Button;
 import android.view.Menu;
 
+/**
+ * First Activity the Android Application opens to
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);

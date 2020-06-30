@@ -25,6 +25,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This class is in charge of dealing with the list of items and when they will expire. Data
+ * is given from the Database Helper class and a ListView displays the items
+ */
+
 public class ExpiryList extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)

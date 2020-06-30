@@ -25,6 +25,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class shows the Statistics (how many items are frozen, what different categories there are)
+ */
+
 public class StatisticsActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
 
     ArrayList<Float> yData = new ArrayList<>();

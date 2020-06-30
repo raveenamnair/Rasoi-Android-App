@@ -4,6 +4,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * Food Model class that stores the Food Objects that SQL Database holds
+ */
+
 public class FoodModel {
 
     // Creating fields Food Model will have

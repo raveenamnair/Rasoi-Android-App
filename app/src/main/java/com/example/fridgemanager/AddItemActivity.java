@@ -29,6 +29,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * This class takes care of the user adding an item to their database
+ * The information given by the user will be used with the Database Helper class
+ * that stores the information in a SQLlite database
+ */
+
 public class AddItemActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     EditText et_foodName;
@@ -43,7 +49,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
 
     DatabaseHelper databaseHelper;
     String categoryPicked;
-    RadioGroup r1, r2;
+
 
 
     @Override
@@ -51,6 +57,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item);
 
+        // Hooking up all the widgets to be accessed
         et_foodName = findViewById(R.id.et_addFood);
         et_location = findViewById(R.id.et_location);
         sw_isFrozen = findViewById(R.id.sw_frozen);
@@ -59,10 +66,9 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
         back = findViewById(R.id.fab_backAdd);
         btn_pickDate = findViewById(R.id.btn_pickDate);
 
-
-
         databaseHelper = new DatabaseHelper(getApplicationContext());
 
+        // Initialize the drop down bar to have all the category names
         List<String> categoryNames = new ArrayList<>();
         addCategoryNames(categoryNames);
 
@@ -71,6 +77,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_categories.setAdapter(arrayAdapter);
 
+        // Creating an onClickListener that stores which category the user clicked on
         spn_categories.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -83,6 +90,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
             }
         });
 
+        // Button onclickListener that stores the date user bought item
         btn_pickDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,6 +141,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
                     status = databaseHelper.addFoodItem(foodModel);
 
                 } catch (Exception e) {
+                    // Error checking
                     foodModel = new FoodModel(-1, "error", "error", "error",
                                       false);
                     Toast.makeText(getApplicationContext(), "Error while adding item. Try again!\n" +
@@ -140,6 +149,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
                             Toast.LENGTH_SHORT).show();
                 }
 
+                // It the item is added properly, a success message will be shown
                 if (status) {
                     Toast.makeText(getApplicationContext(), "Item added successfully " ,
                             Toast.LENGTH_SHORT).show();
@@ -159,6 +169,7 @@ public class AddItemActivity extends AppCompatActivity implements DatePickerDial
 
     }
 
+    // method that adds the category names to the List<String>
     public void addCategoryNames(List<String> categories) {
         categories.add("Pick a category");
         categories.add("Fruits");

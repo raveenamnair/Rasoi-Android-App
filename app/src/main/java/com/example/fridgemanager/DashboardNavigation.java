@@ -34,6 +34,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This is the DashboardNavigation class that deals with the main activity.
+ * When the user clicks on a card it will lead them to another activity that
+ * displays which items are in that category
+ */
 public class DashboardNavigation extends AppCompatActivity implements View.OnClickListener {
 
     CardView stats_card, all_card, fruits_card, veg_card, dairy_card, grains_card, meat_card,
@@ -154,6 +159,7 @@ public class DashboardNavigation extends AppCompatActivity implements View.OnCli
         }
     }
 
+    // This method deals with the short expiry list that user will see when opening app
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void setExpiryListPreview(DatabaseHelper db) {
         List<FoodModel> expiryList = db.getExpiryList();
@@ -216,6 +222,7 @@ public class DashboardNavigation extends AppCompatActivity implements View.OnCli
         }
     }
 
+    // This method will calculate the days left for a item
     @RequiresApi(api = Build.VERSION_CODES.O)
     public long daysLeft(String date) {
         Calendar cal = Calendar.getInstance();

@@ -8,6 +8,10 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * Class that hosts the Help Activity Page
+ */
+
 public class HelpActivity extends AppCompatActivity {
 
     @Override
