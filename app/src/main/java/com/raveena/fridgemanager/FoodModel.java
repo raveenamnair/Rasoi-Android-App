@@ -1,4 +1,4 @@
-package com.example.fridgemanager;
+package com.raveena.fridgemanager;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

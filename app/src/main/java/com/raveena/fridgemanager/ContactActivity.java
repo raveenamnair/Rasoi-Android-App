@@ -1,4 +1,4 @@
-package com.example.fridgemanager;
+package com.raveena.fridgemanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
